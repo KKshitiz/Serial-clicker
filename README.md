@@ -37,4 +37,5 @@ This repo contains miniature coding projects.
         """
         * The executable will be located in the script_folder/dist directory *
         * To create a setup use NSIS open source software
+        * To decrease the size of exe file significantly, use strip.exe and then UPX
 * ## password saver
