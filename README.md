@@ -1,11 +1,13 @@
 *  # Serial clicker
     ## Description
-    This piece of code can make someone laugh and someone cry at the same time!
+    This piece of code can make someone laugh and the other cry at the same time!
+    <br>
+    [UI](UI.png)
     <br>
     What it does?
-    * Lets the user input two values- interval and healingtime and the type of click
-    * Performs that type of click for 'interval' time with a gap of 'healingtime' randomly anywhere on your desktop
-    * For example, if click=Double, interval=2, healingtime=4, then the code will repeatedly perform double clicks for a time of 2s, pause for 4s and then again clicks for 2s. This process is continued until the process is force stopped(a warm boot will work).
+    * Lets the user input two values - *interval* and *healingtime* and the *type of click*
+    * Performs that type of click for *'interval'* time with a gap of *'healingtime'* randomly anywhere on your desktop
+    * For example, if *click=Double*, *interval=2*, *healingtime=4*, then the code will repeatedly perform double clicks for a time of 2s, pause for 4s and then again clicks for 2s. This process is continued until the process is force stopped(a warm boot will work).
     
     ### How to deploy?
     * One time fun:
@@ -33,6 +35,8 @@
         pyinstaller --onefile script.py             //standalone executable file with terminal
         pyinstaller --onefile -w script.py          //standalone executable without terminal
         
-      **The executable will be located in the script_folder/dist directory**
-      <br>
-        *To create a setup use NSIS open source software*
+    **The executable will be located in the script_folder/dist directory**
+    <br>
+    *To create a setup use NSIS open source software*
+    <br>
+    *To compress the exe significantly use strip.exe then UPX*
