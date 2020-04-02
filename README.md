@@ -2,7 +2,7 @@
     ## Description
     This piece of code can make someone laugh and the other cry at the same time!
     <br>
-    [UI](UI.png)
+    ![UI](UI.png)
     <br>
     What it does?
     * Lets the user input two values - *interval* and *healingtime* and the *type of click*
@@ -12,17 +12,19 @@
     ### How to deploy?
     * One time fun:
         * Open the executable on victim's system
+        OR
         * Open the python file if the victim has all required libraries installed
     * The show must go on:
         * Put the executable in the startup folder of windows
+        OR
         * Put the python file in the startup folder of windows if the victim has all required libraries installed
     <br>
     The executable for windows can be located in the dist/ directory
         
     ## Technologies used:
-        * python3
-        * tkinter library
-        * pyautogui library
+      - python3
+      - tkinter library
+      -  pyautogui library
 
     ## How to install requirements:
         pip install tkinter

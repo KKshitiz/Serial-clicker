@@ -1,9 +1,9 @@
 import pyautogui
-import time
+from time import time,sleep
 from win32api import GetSystemMetrics
-from tkinter import *
-from tkinter import ttk
-import random
+from tkinter import Radiobutton,Button,Label,Frame,TOP,Tk,LEFT,X,StringVar,LabelFrame
+from tkinter.ttk import Entry
+from random import randrange
 
 """
 variables purpose
@@ -23,21 +23,21 @@ healingtime-->0
 #execute the auto clicker code
 def startCode(clicktype="single",interval=0.5,healingtime=0.5):
     
-    start=time.time()
+    start=time()
     root.destroy()
     while True:
         if clicktype=="single":
-            pyautogui.click(random.randrange(0,GetSystemMetrics(0)),random.randrange(0,GetSystemMetrics(1)))
+            pyautogui.click(randrange(0,GetSystemMetrics(0)),randrange(0,GetSystemMetrics(1)))
         elif clicktype=="double":
-            pyautogui.doubleClick(random.randrange(0,GetSystemMetrics(0)),random.randrange(0,GetSystemMetrics(1)))
+            pyautogui.doubleClick(randrange(0,GetSystemMetrics(0)),randrange(0,GetSystemMetrics(1)))
         elif clicktype=="triple":
-            pyautogui.tripleClick(random.randrange(0,GetSystemMetrics(0)),random.randrange(0,GetSystemMetrics(1)))
+            pyautogui.tripleClick(randrange(0,GetSystemMetrics(0)),randrange(0,GetSystemMetrics(1)))
         
-        end=time.time()
+        end=time()
         if(end-start>interval):
-            time.sleep(healingtime)
-            start=time.time()
-            end=time.time()
+            sleep(healingtime)
+            start=time()
+            end=time()
             
 
 
@@ -63,8 +63,8 @@ def startUI():
     v=StringVar()
     v.set("single")
 
-    interval=ttk.Entry(frame1)
-    healingtime=ttk.Entry(frame2)
+    interval=Entry(frame1)
+    healingtime=Entry(frame2)
     interval.focus_force()
     healingtime.focus_force()
     intervall=Label(frame1,text="Interval(in s) ",bg="#1E1E1E",fg="white")
