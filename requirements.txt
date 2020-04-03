@@ -1,0 +1,2 @@
+pyautogui library
+tkinter library

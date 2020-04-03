@@ -11,22 +11,33 @@ This piece of code can make someone laugh and the other cry at the same time!
 * For example, if *click=Double*, *interval=2*, *healingtime=4*, then the code will repeatedly perform double clicks for a time of 2s, pause for 4s and then again clicks for 2s. This process is continued until the process is force stopped(a warm boot will work).
 
 ### How to deploy?
-    * Open the executable on victim's system
+    * Open the executable on victim's system. No extra installation required to run the executable
     OR
     * Open the python file if the victim has all required libraries installed
 
 <br>
 The executable for windows can be located in the dist/ directory
-    
-## Technologies used:
-  - python3
-  - tkinter library
-  -  pyautogui library
 
 ## How to install requirements:
     pip install tkinter
     pip install pyautogui
     
+## Install using bash script
+Run the following command in linux terminal or git bash
+    bash ./install_requirements.sh
+
+## Technologies used:
+  - python3
+  - tkinter
+  - pyautogui
+
+## Libraries used
+  - pyautogui
+  - time
+  - win32api
+  - tkinter
+  - random
+
 ## Create your own executable
     pip install pyinstaller
     cd script_folder
