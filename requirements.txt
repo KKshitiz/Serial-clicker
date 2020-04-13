@@ -1,2 +1,2 @@
-pyautogui library
-tkinter library
+pyautogui
+tkinter
